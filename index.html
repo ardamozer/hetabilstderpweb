@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="STDERP Yazılım">
+    <title>STDERP – Savunma Sanayi Süreç Takip Yazılımı</title>
+    <meta name="description"
+        content="Savunma sanayi firmalarının üretim, tedarik, kalite ve lojistik süreçlerini uçtan uca yöneten kapsamlı süreç takip yazılımı.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ══════════════════ TOPBAR ══════════════════ -->
+    <div class="topbar">
+        <div class="cont">
+            <ul class="tb-contact">
+                <li><i class="fa fa-envelope"></i><a href="mailto:info@hetabil.com">info@hetabil.com</a></li>
+                <li><i class="fa fa-phone"></i><a href="tel:+903129111257">+90 312 911 12 57</a></li>
+                <li><i class="fa fa-location-dot"></i>Teknopark Ankara</li>
+            </ul>
+            <div class="tb-right">
+                <div class="tb-social">
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hetabil/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="tb-divider"></div>
+                <div class="tb-lang-wrap">
+                    <div class="tb-lang">
+                        <span class="flag">🇹🇷</span>
+                        <span class="lang-txt">TR</span>
+                        <span class="caret"><i class="fa fa-chevron-down"></i></span>
+                    </div>
+                    <ul class="tb-lang-dropdown">
+                        <li><a href="#"><span class="flag">🇹🇷</span> TR</a></li>
+                        <li><a href="#"><span class="flag">🇬🇧</span> EN</a></li>
+                        <li><a href="#"><span class="flag">🇩🇪</span> DE</a></li>
+                        <li><a href="#"><span class="flag">🇫🇷</span> FR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════ HEADER ══════════════════ -->
+    <div class="fw-header">
+        <header>
+            <div class="nav-inner">
+                <a class="logo-wrap" href="#hero">
+                    <img src="HETABİL-RENKLİ.svg" alt="Hetabil Yazılım"
+                        style="width: 199.5px; height: 58.13px; display: block;">
+                </a>
+                <div class="main-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#hero">ANASAYFA</a></li>
+                            <li class="has-dd">
+                                <a href="#hakkinda">KURUMSAL</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#hakkinda">Yazılım Hakkında</a></li>
+                                    <li><a href="#standartlar">Standartlar</a></li>
+                                    <li><a href="#ekranlar">Ekran Görüntüleri</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#moduller">MODÜLLER</a></li>
+                            <li><a href="#raporlar">RAPORLAR</a></li>
+                            <li><a href="#iletisim">İLETİŞİM</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-cta-wrap">
+                    <a href="#iletisim" class="nav-cta-btn">İletişime Geç</a>
+                </div>
+                <button class="mob-btn" id="mobBtn" aria-label="Menü"><i class="fa fa-bars"></i></button>
+            </div>
+        </header>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mn-head">
+            <div class="logo-text">STD<span style="color:var(--pri)">ERP</span></div>
+            <button class="mn-close" id="mnClose"><i class="fa fa-times"></i></button>
+        </div>
+        <ul>
+            <li><a href="#hero">Anasayfa</a></li>
+            <li><a href="#hakkinda">Yazılım Hakkında</a></li>
+            <li><a href="#moduller">Modüller</a></li>
+            <li><a href="#ekranlar">Ekranlar</a></li>
+            <li><a href="#standartlar">Standartlar</a></li>
+            <li><a href="#raporlar">Raporlar</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <a href="#iletisim" class="mn-cta">İletişime Geç</a>
+    </nav>
+
+    <!-- ══════════════════ HERO SLIDER ══════════════════ -->
+    <section id="hero" style="position:relative;">
+        <div class="hero-wrap">
+            <div class="hero-slider" id="heroSlider">
+
+                <!-- Slide 1 -->
+                <div class="slide slide-bg-1 active" id="sl-0">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-inner">
+                        <div class="slide-content">
+                            <div class="slide-sub au1">Savunma Sanayi ERP Yazılımı</div>
+                            <h1 class="slide-h1 au2">Sektörel ve<br><span>İhtiyaca Özel</span><br>Yazılım Çözümleri</h1>
+                            <p class="slide-p au3">Savunma sanayi firmalarının üretim, tedarik, kalite ve lojistik
+                                süreçlerini MIL &amp; ISO standartlarına uygun olarak uçtan uca yöneten kapsamlı ERP
+                                platformu.</p>
+                            <div class="slide-btns au4">
+                                <a href="#ekranlar" class="btn-sld btn-sld-pri"><i class="fa fa-play-circle"></i>
+                                    Yazılımı İncele</a>
+                                <a href="#iletisim" class="btn-sld btn-sld-out"><i class="fa fa-envelope"></i> Bize
+                                    Ulaşın</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide slide-bg-2" id="sl-1">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-inner">
+                        <div class="slide-content">
+                            <div class="slide-sub">MIL &amp; ISO Uyumlu Platform</div>
+                            <h1 class="slide-h1">Ölçeklenebilir<br><span>Üretim &amp; Kalite</span><br>Yönetimi</h1>
+                            <p class="slide-p">12 ana modül, 100+ alt özellik ve 26 gelişmiş raporla savunma sanayinin
+                                tüm iş süreçlerini tek platformda yönetin. Sipariş takibinden kalite kontrole tam
+                                izlenebilirlik.</p>
+                            <div class="slide-btns">
+                                <a href="#moduller" class="btn-sld btn-sld-pri"><i class="fa fa-th-large"></i> Modülleri
+                                    Keşfet</a>
+                                <a href="#hakkinda" class="btn-sld btn-sld-out"><i class="fa fa-info-circle"></i> Daha
+                                    Fazla Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /hero-slider -->
+
+            <!-- Dots -->
+            <div class="slider-dots" id="sliderDots">
+                <div class="s-dot active" data-i="0"></div>
+                <div class="s-dot" data-i="1"></div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+                <div class="hero-stats-inner">
+                    <div class="hs-item">
+                        <div class="hs-num">12<span style="color:var(--acc);font-size:1.2rem;">+</span></div>
+                        <div class="hs-lbl">Ana Modül</div>
+                    </div>
+                    <div class="hs-item">
+                        <div class="hs-num">100<span style="color:var(--acc);font-size:1.2rem;">+</span></div>
+                        <div class="hs-lbl">Alt Özellik</div>
+                    </div>
+                    <div class="hs-item">
+                        <div class="hs-num">26</div>
+                        <div class="hs-lbl">Gelişmiş Rapor</div>
+                    </div>
+                    <div class="hs-item">
+                        <div class="hs-num" style="font-size:1.35rem;line-height:1.1;">MIL<span
+                                style="color:rgba(255,255,255,.3);font-size:1rem;">&amp;</span>ISO</div>
+                        <div class="hs-lbl">Standart Uyumluluğu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ HAKKINDA ══════════════════ -->
+    <section id="hakkinda" class="section">
+        <div class="cont">
+            <div class="about-grid">
+                <!-- System Architecture Diagram -->
+                <div class="arch-box">
+                    <div class="arch-title"><i class="fa fa-network-wired"></i> STDERP Altyapı Mimarisi</div>
+                    <div class="arch-flow">
+                        <div class="arch-step">
+                            <div class="as-icon"><i class="fa fa-cubes"></i></div>
+                            <div class="as-info">
+                                <div class="as-name">Modüler Çözüm Katmanı</div>
+                                <div class="as-desc">Üretim, Tedarik, Depo, Kalite ve Planlama Modülleri</div>
+                            </div>
+                        </div>
+                        <div class="arch-arrow"><i class="fa fa-angles-down"></i></div>
+                        <div class="arch-step">
+                            <div class="as-icon"><i class="fa fa-server"></i></div>
+                            <div class="as-info">
+                                <div class="as-name">Güvenli Yerel Sunucu (On-Premise)</div>
+                                <div class="as-desc">Şirket içi sunucularda çalışan bağımsız ve izole altyapı</div>
+                            </div>
+                        </div>
+                        <div class="arch-arrow"><i class="fa fa-angles-down"></i></div>
+                        <div class="arch-step highlight">
+                            <div class="as-icon"><i class="fa fa-shield-halved"></i></div>
+                            <div class="as-info">
+                                <div class="as-name">Askeri &amp; Endüstriyel Standartlar</div>
+                                <div class="as-desc">Milli Savunma (MIL-STD) ve ISO kalite gereksinimleri</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div>
+                    <div class="sec-lbl">Yazılım Hakkında</div>
+                    <h2 class="sec-title">Savunma Sanayine Özel<br>Entegre Süreç Yönetimi</h2>
+                    <p class="sec-desc">STDERP, savunma sanayi sektöründe faaliyet gösteren firmaların tüm üretim,
+                        tedarik ve operasyon süreçlerini uçtan uca yönetebilmesi için MIL ve ISO standartlarına uygun
+                        olarak geliştirilmiş kapsamlı bir yazılımdır. Satın almadan üretime, kalite kontrolden lojistiğe
+                        tüm süreçler tek platformda.</p>
+                    <div class="about-feats">
+                        <div class="af">
+                            <div class="af-icon"><i class="fa fa-gears"></i></div>
+                            <div>
+                                <div class="af-title">Entegre Süreç Yönetimi</div>
+                                <div class="af-desc">Satın almadan üretime, kalite kontrolden lojistiğe kadar tüm iş
+                                    süreçlerini tek bir platformda entegre ederek yönetin.</div>
+                            </div>
+                        </div>
+                        <div class="af">
+                            <div class="af-icon"><i class="fa fa-circle-check"></i></div>
+                            <div>
+                                <div class="af-title">Kalite ve Standart Uyumluluğu</div>
+                                <div class="af-desc">MIL ve ISO kalite standartlarını uygulayarak süreçlerin
+                                    uluslararası normlara uygun şekilde yürütülmesini sağlar.</div>
+                            </div>
+                        </div>
+                        <div class="af">
+                            <div class="af-icon"><i class="fa fa-route"></i></div>
+                            <div>
+                                <div class="af-title">Tam İzlenebilirlik</div>
+                                <div class="af-desc">Malzeme ve ürünlerin tedarik zinciri boyunca tüm hareketleri kayıt
+                                    altına alınır. Denetim ve raporlama süreçleri kolaylaşır.</div>
+                            </div>
+                        </div>
+                        <div class="af">
+                            <div class="af-icon"><i class="fa fa-puzzle-piece"></i></div>
+                            <div>
+                                <div class="af-title">Özelleştirilebilir Modüller</div>
+                                <div class="af-desc">Modüler ve ölçeklenebilir yapısıyla farklı büyüklükteki işletmelere
+                                    uygun çözümler sunar.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#iletisim" class="btn-about"><i class="fa fa-envelope"></i> İletişime Geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ STATS ══════════════════ -->
+    <div class="stats-strip">
+        <div class="stats-grid">
+            <div class="stat-cell">
+                <div class="stat-num">12<span>+</span></div>
+                <div class="stat-lbl">Ana Modül</div>
+            </div>
+            <div class="stat-cell">
+                <div class="stat-num">100<span>+</span></div>
+                <div class="stat-lbl">Alt Özellik</div>
+            </div>
+            <div class="stat-cell">
+                <div class="stat-num">26</div>
+                <div class="stat-lbl">Gelişmiş Rapor</div>
+            </div>
+            <div class="stat-cell">
+                <div class="stat-num" style="font-size:2.1rem;">MIL<span>&amp;</span>ISO</div>
+                <div class="stat-lbl">Standart Uyumluluğu</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════ MODÜLLER ══════════════════ -->
+    <section id="moduller" class="section section-gray">
+        <div class="cont">
+            <div class="tc">
+                <div class="sec-lbl">Yazılım Modülleri</div>
+                <h2 class="sec-title">Kapsamlı Modüler Yapı</h2>
+                <p class="sec-desc">Her iş süreciniz için özelleştirilmiş modüller. İhtiyacınıza göre seçin,
+                    ölçeklendirin.</p>
+            </div>
+
+            <div class="module-tabs" id="mTabs">
+                <button class="m-tab active" data-p="0">Temel Tanımlamalar</button>
+                <button class="m-tab" data-p="1">Teklif &amp; Sipariş</button>
+                <button class="m-tab" data-p="2">Satın Alma &amp; Stok</button>
+                <button class="m-tab" data-p="3">İş Emri</button>
+                <button class="m-tab" data-p="4">Kalite</button>
+                <button class="m-tab" data-p="5">Sevkiyat &amp; Diğer</button>
+            </div>
+
+            <div class="m-panel active" id="mp-0">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">Cari Kart Tanımlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Personel Tanımlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">Üretim Grubu Tanımlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">Ölçüm Cihaz Tanımlamaları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Operasyon Tanımlamaları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">Tezgâh Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Hammadde Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Kesici Takım Tanımları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">Kalıp Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">10</div>
+                        <div class="m-name">Risk Tanımları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">11</div>
+                        <div class="m-name">Fire Nedenleri Tanımları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">12</div>
+                        <div class="m-name">Müşteri Mastar Tanımları</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-panel" id="mp-1">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">Teklif Düzenleme</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Maliyet Hesaplama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">Yapılabilirlik Analizi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">Proforma Fatura Hazırlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Outlook Proforma Entegrasyonu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">Siparişe Dönüştürme</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Sipariş Düzenleme</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Sipariş Kalem Klasörleri</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">GKK Form İlişkilendirme</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-panel" id="mp-2">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">Malzeme / Stok / Hizmet Talepleri</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Teklif Talep Formu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">Satın Alma Sipariş Formları</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">Depo Tanımlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Stok Kartı &amp; Hareketleri</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">Depo Yerleşim Planı</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Kritik Stok Düzeyi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Tedarikçi Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">Satın Alma Entegrasyonu</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-panel" id="mp-3">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">İş Emri Oluşturma</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Rota &amp; Reçete Tanımlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">FAI Formu (İlk Ürün Muayenesi)</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">Ara Kontrol Formu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Uygunluk Belgesi (CoC)</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">İş Emri Etiket Yazdırma</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Proses Takip Formu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Otomatik Üretim Klasörleri</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">Denetime Hazır Kontrolü</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-panel" id="mp-4">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">Girdi Kalite Kontrol Formu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Uygunsuzluk Raporu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">Düzeltici Faaliyet</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">CMM Ölçüm &amp; Sapma Takibi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Tedarikçi Puanlama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">Cihaz Kalibrasyon Yönetimi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Konfigürasyon Takibi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Tezgâh Bakım &amp; Arıza</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">Onaylı Tedarikçi Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-panel" id="mp-5">
+                <div class="m-grid">
+                    <div class="m-card">
+                        <div class="m-num">01</div>
+                        <div class="m-name">Sevk Emri &amp; İrsaliye</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">02</div>
+                        <div class="m-name">Teslim Tutanağı</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">03</div>
+                        <div class="m-name">Yan Sanayi Parça Takibi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">04</div>
+                        <div class="m-name">Dış Operasyon Takip Formu</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">05</div>
+                        <div class="m-name">Kesici Takım Listesi &amp; Çekme</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">06</div>
+                        <div class="m-name">İş Emri Tezgâh Hazırlık</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">07</div>
+                        <div class="m-name">Sahadan Veri Toplama</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">08</div>
+                        <div class="m-name">Personel Eğitim Geçmişi</div>
+                        <div class="m-line"></div>
+                    </div>
+                    <div class="m-card">
+                        <div class="m-num">09</div>
+                        <div class="m-name">EYS Doküman Listesi</div>
+                        <div class="m-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mods-cta">
+                <a href="#iletisim" class="btn-out">Tüm Modüllere Göz At &nbsp;<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ STANDARTLAR ══════════════════ -->
+    <section id="standartlar" class="section">
+        <div class="cont">
+            <div class="tc">
+                <div class="sec-lbl">Uyumluluk</div>
+                <h2 class="sec-title">Uluslararası Standartlara Tam Uyum</h2>
+                <p class="sec-desc">STDERP, savunma sanayinin gerektirdiği en yüksek kalite ve güvenlik standartlarını
+                    karşılamak için tasarlanmıştır.</p>
+            </div>
+            <div class="std-grid">
+                <div class="std-card">
+                    <div class="std-ico-wrap">
+                        <div class="std-ico-txt">MIL-STD</div>
+                    </div>
+                    <div class="std-title">Amerikan Askeri Standartları</div>
+                    <div class="std-desc">MIL-STD-1388, MIL-Q-9858 ve ilgili askeri standartlara tam uyumlu proses
+                        yönetimi ve kalite güvencesi.</div>
+                </div>
+                <div class="std-card">
+                    <div class="std-ico-wrap">
+                        <div class="std-ico-txt">ISO 9001</div>
+                    </div>
+                    <div class="std-title">Kalite Yönetim Sistemi</div>
+                    <div class="std-desc">ISO 9001:2015 gerekliliklerini karşılayan belgelendirme, doküman kontrolü ve
+                        süreç izleme altyapısı.</div>
+                </div>
+                <div class="std-card">
+                    <div class="std-ico-wrap">
+                        <div class="std-ico-txt">AS9100</div>
+                    </div>
+                    <div class="std-title">Havacılık &amp; Savunma KYS</div>
+                    <div class="std-desc">AS9100 Rev D standartlarına uygun konfigürasyon yönetimi, risk analizi ve
+                        izlenebilirlik gereksinimleri.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ EKRANLAR ══════════════════ -->
+    <section id="ekranlar" class="section section-gray">
+        <div class="cont">
+            <div class="tc">
+                <div class="sec-lbl">Ekran Görüntüleri</div>
+                <h2 class="sec-title">Yazılım Arayüzü</h2>
+                <p class="sec-desc">STDERP'in sezgisel ve güçlü arayüzüyle savunma sanayi süreçlerinizi gerçek zamanlı
+                    olarak yönetin.</p>
+            </div>
+
+            <!-- ── SCREEN SLIDER ── -->
+            <div class="screen-slider-wrap" id="screenSliderWrap">
+
+                <!-- Fake browser bar -->
+                <div class="sc-bar">
+                    <span class="sc-dot r"></span>
+                    <span class="sc-dot y"></span>
+                    <span class="sc-dot g"></span>
+                    <span class="sc-tab" id="scTabLabel">ANA_PANEL</span>
+                    <span class="sc-counter" id="scCounter">1 / 8</span>
+                </div>
+
+                <!-- Main slide area -->
+                <div class="sc-main-viewport">
+                    <!-- Prev arrow -->
+                    <button class="sc-arrow sc-arrow-prev" id="scPrev" aria-label="Önceki">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Slides strip -->
+                    <div class="sc-slides" id="scSlides">
+                        <div class="sc-slide"><img src="resim1.jpeg" alt="Ana Yönetim Paneli"></div>
+                        <div class="sc-slide"><img src="resim2.jpeg" alt="Sipariş &amp; Sözleşme Yönetimi"></div>
+                        <div class="sc-slide"><img src="resim3.jpeg" alt="Üretim &amp; Rota Planlama"></div>
+                        <div class="sc-slide"><img src="resim4.jpeg" alt="Satın Alma ve Talep Yönetimi"></div>
+                        <div class="sc-slide"><img src="resim5.jpeg" alt="Depo &amp; Stok Kartı Hareketleri"></div>
+                        <div class="sc-slide"><img src="resim6.jpeg" alt="Kalite Kontrol &amp; GKK Formları"></div>
+                        <div class="sc-slide"><img src="resim7.jpeg" alt="Detaylı Analiz &amp; Raporlama"></div>
+                        <div class="sc-slide"><img src="resim8.jpeg" alt="EYS Doküman Yönetim Sistemi"></div>
+                    </div>
+
+                    <!-- Next arrow -->
+                    <button class="sc-arrow sc-arrow-next" id="scNext" aria-label="Sonraki">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Caption bar -->
+                <div class="sc-caption-bar">
+                    <div class="sc-cap-title" id="scCapTitle">Ana Yönetim Paneli</div>
+                    <div class="sc-cap-tag" id="scCapTag">Dashboard</div>
+                </div>
+
+                <!-- Thumbnail strip -->
+                <div class="sc-thumbs" id="scThumbs">
+                    <div class="sc-thumb active" data-idx="0"><img src="resim1.jpeg" alt="1"></div>
+                    <div class="sc-thumb" data-idx="1"><img src="resim2.jpeg" alt="2"></div>
+                    <div class="sc-thumb" data-idx="2"><img src="resim3.jpeg" alt="3"></div>
+                    <div class="sc-thumb" data-idx="3"><img src="resim4.jpeg" alt="4"></div>
+                    <div class="sc-thumb" data-idx="4"><img src="resim5.jpeg" alt="5"></div>
+                    <div class="sc-thumb" data-idx="5"><img src="resim6.jpeg" alt="6"></div>
+                    <div class="sc-thumb" data-idx="6"><img src="resim7.jpeg" alt="7"></div>
+                    <div class="sc-thumb" data-idx="7"><img src="resim8.jpeg" alt="8"></div>
+                </div>
+
+            </div><!-- /screen-slider-wrap -->
+        </div>
+    </section>
+
+    <!-- ══════════════════ RAPORLAR ══════════════════ -->
+    <section id="raporlar" class="section">
+        <div class="cont">
+            <div class="tc">
+                <div class="sec-lbl">Raporlama</div>
+                <h2 class="sec-title">26 Farklı Gelişmiş Rapor</h2>
+                <p class="sec-desc">Veri odaklı kararlar için kapsamlı raporlama altyapısı.</p>
+            </div>
+            <div class="rep-grid">
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-chart-line"></i></div>
+                    <div class="rep-name">Teklif Performans Raporu</div>
+                    <div class="rep-desc">Tekliflerin kabul oranları, müşteri bazlı dağılım ve maliyet analizleri.</div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-table-cells-large"></i></div>
+                    <div class="rep-name">Kapasite Raporu</div>
+                    <div class="rep-desc">Tezgâh ve personel bazlı anlık kapasite kullanım oranları ve tahminleri.</div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-clock"></i></div>
+                    <div class="rep-name">Teslimatı Geciken Sipariş</div>
+                    <div class="rep-desc">Zamanında teslimat performansı ve gecikme nedenlerinin analizi.</div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-circle-check"></i></div>
+                    <div class="rep-name">Fire Nedeni Dağılım</div>
+                    <div class="rep-desc">Hurda ve fire parçaların neden bazlı dağılımı, önleyici faaliyet desteği.
+                    </div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-chart-bar"></i></div>
+                    <div class="rep-name">Personel Çalışma Raporu</div>
+                    <div class="rep-desc">Gün, ay ve yıl bazlı personel verimliliği ve çalışma süresi analizleri.</div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-box"></i></div>
+                    <div class="rep-name">Tedarikçi Değerlendirme</div>
+                    <div class="rep-desc">Onaylı tedarikçi puanlaması, performans metrikleri ve kıyaslama raporları.
+                    </div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-signal"></i></div>
+                    <div class="rep-name">Açık Sipariş Ciro Raporu</div>
+                    <div class="rep-desc">Devam eden siparişlerin tahmini ciro değerleri ve finansal projeksiyon.</div>
+                </div>
+                <div class="rep-card">
+                    <div class="rep-ico"><i class="fa fa-file-lines"></i></div>
+                    <div class="rep-name">Tarihsel Fiyat Analizi</div>
+                    <div class="rep-desc">Parça ve malzeme bazlı tarihsel fiyat değişimlerinin trend analizi.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ CTA / İLETİŞİM ══════════════════ -->
+    <section id="iletisim" class="cta-sec">
+        <div class="cont">
+            <div class="cta-sub">Bizimle İletişime Geçin</div>
+            <h2 class="cta-h2">Detaylı Bilgi Almak İster misiniz?</h2>
+            <p class="cta-p">STDERP yazılımı hakkında bilgi edinmek veya süreçlerinizi analiz etmemiz için bizimle
+                iletişime geçin. Uzman ekibimiz en kısa sürede size yardımcı olacaktır.</p>
+            <div class="cta-btns">
+                <a href="mailto:info@hetabil.com" class="btn-cta-acc"><i class="fa fa-envelope"></i> İletişime Geç</a>
+                <a href="#hakkinda" class="btn-cta-out"><i class="fa fa-info-circle"></i> Daha Fazla Bilgi</a>
+            </div>
+            <div class="cta-contacts">
+                <div class="cta-ci">
+                    <div class="cta-ci-icon"><i class="fa fa-envelope"></i></div>
+                    <div>
+                        <div class="cta-ci-lbl">E-posta</div>
+                        <div class="cta-ci-val">info@hetabil.com</div>
+                    </div>
+                </div>
+                <div class="cta-ci">
+                    <div class="cta-ci-icon"><i class="fa fa-phone"></i></div>
+                    <div>
+                        <div class="cta-ci-lbl">Telefon</div>
+                        <div class="cta-ci-val">+90 312 911 12 57</div>
+                    </div>
+                </div>
+                <div class="cta-ci">
+                    <div class="cta-ci-icon"><i class="fa fa-location-dot"></i></div>
+                    <div>
+                        <div class="cta-ci-lbl">Adres</div>
+                        <div class="cta-ci-val">Teknopark Ankara</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ FOOTER ══════════════════ -->
+    <footer>
+        <div class="ft-top">
+            <div class="cont">
+                <div class="ft-grid">
+                    <!-- Logo -->
+                    <div>
+                        <div class="ft-logo">
+                            <img src="HETABİL-RENKLİ.svg" alt="Hetabil Yazılım"
+                                style="width: 199.5px; height: 58.13px; display: block; margin-bottom: 14px;">
+                        </div>
+                        <p class="ft-about-p">Sektörel ve İhtiyaca Yönelik Yazılım Çözümleri</p>
+                        <div class="ft-social">
+                            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/hetabil/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Quick links -->
+                    <div>
+                        <div class="ft-wt">Hızlı Menü</div>
+                        <div class="ft-links">
+                            <a href="#hero">Anasayfa</a>
+                            <a href="#hakkinda">Yazılım Hakkında</a>
+                            <a href="#moduller">Modüller</a>
+                            <a href="#standartlar">Standartlar</a>
+                            <a href="#raporlar">Raporlar</a>
+                            <a href="#iletisim">İletişim</a>
+                        </div>
+                    </div>
+                    <!-- Modules -->
+                    <div>
+                        <div class="ft-wt">Modüller</div>
+                        <div class="ft-links">
+                            <a href="#moduller">Temel Tanımlamalar</a>
+                            <a href="#moduller">Teklif &amp; Sipariş</a>
+                            <a href="#moduller">Satın Alma &amp; Stok</a>
+                            <a href="#moduller">İş Emri Yönetimi</a>
+                            <a href="#moduller">Kalite Kontrol</a>
+                            <a href="#moduller">Sevkiyat &amp; Lojistik</a>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div>
+                        <div class="ft-wt">İletişim</div>
+                        <div class="ft-addr">
+                            <div class="ft-addr-item">
+                                <i class="fa fa-location-dot"></i>
+                                <div class="at">İvedik OSB Mah. 2224. Cad. No:1/116<br>Yenimahalle / ANKARA<br>Teknopark
+                                    Ankara TGB Yerleşkesi</div>
+                            </div>
+                            <div class="ft-addr-item">
+                                <i class="fa fa-phone"></i>
+                                <div class="at"><a href="tel:+903129111257">+90 312 911 12 57</a></div>
+                            </div>
+                            <div class="ft-addr-item">
+                                <i class="fa fa-envelope"></i>
+                                <div class="at"><a href="mailto:info@hetabil.com">info@hetabil.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bot">
+            <div class="ft-bot-inner">
+                <div class="ft-copy">Copyright &copy; Hetabil Yazılım 2022 – 2026. Tüm Hakları Saklıdır.</div>
+                <div class="ft-bot-links">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Koşulları</a>
+                    <a href="#">KVKK</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scroll Top -->
+    <div class="scroll-top" id="scrollTop"><i class="fa fa-angle-up"></i></div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
